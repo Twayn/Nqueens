@@ -35,7 +35,7 @@ class Solver_8_queens:
         population = self.create_initial_population()
 
         for i in range(max_epochs):
-            print("iteration: {}".format(i))
+            #print("iteration: {}".format(i))
             if self.check_exit_condition(population, min_fitness):
                 return i, fitness_value(self.result), self.board_to_string(board_value(self.result))
 
